@@ -4,6 +4,16 @@ dDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.
 You need to have an account on freedns.afraid.org and choose dynamic domain names:
 https://freedns.afraid.org/
 
+# How to activate and deactivate Python2.7 under Python3.8
+<pre>
+To activate python2.7
+conda create --name py2 python=2.7
+conda activate py2
+
+To deactivate:
+conda deactivate
+</pre>
+
 # How to prepare for dDNS
 To use this PyPI dDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
