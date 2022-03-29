@@ -1,6 +1,10 @@
 # dDNS
 dDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
 
+You need to have an account on freedns.afraid.org and choose dynamic domain names:
+https://freedns.afraid.org/
+
+# How to prepare for dDNS
 To use this PyPI dDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
 1.You must create .freedns directory.
@@ -28,3 +32,11 @@ $ pip install dDNS
 # How to run dDNS
 $ dDNS
 
+# crontab
+You should type the following command to set crontab schedule:
+
+$ crontab -e
+
+The following shows an example in crontab scheduler to run dDNS every 9 minutes.
+
+*/9 * * * * dDNS >/dev/null
