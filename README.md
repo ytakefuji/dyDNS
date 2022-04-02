@@ -1,21 +1,13 @@
-# dDNS
-dDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
+# dyDNS
+dyDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
 
 You need to have an account on freedns.afraid.org and choose dynamic domain names:
 https://freedns.afraid.org/
 
-# How to activate and deactivate Python2.7 under Python3.8
-<pre>
-To activate python2.7
-conda create --name py2 python=2.7
-conda activate py2
+You can have up to five domain names for free dynamic DNS.
 
-To deactivate:
-conda deactivate
-</pre>
-
-# How to prepare for dDNS
-To use this PyPI dDNS, you need to prepare for .freedns directory and two files: crypted and key.
+# How to prepare for dyDNS
+To use this PyPI dyDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
 1.You must create .freedns directory.
 $ mkdir .freedns
@@ -33,14 +25,18 @@ your_key
 $ chmod 700 key
 5. Encrypt freedns.info to crypted file
 $ openssl enc -e -aes256 -pbkdf2 -in freedns.info -out crypted -k `cat key` 
-6. ".freedns" directory has two files: crypted and key
+6. Delete freedns.info file.
+$ rm freedns.info
+7. ".freedns" directory has two files: crypted and key
+$ ls
+crypted key
 </pre>
 
-# How to install dDNS
-$ pip install dDNS
+# How to install dyDNS
+$ pip install dydns
 
-# How to run dDNS
-$ dDNS
+# How to run dyDNS
+$ dydns
 
 # crontab
 You should type the following command to set crontab schedule:
@@ -49,4 +45,4 @@ $ crontab -e
 
 The following shows an example in crontab scheduler to run dDNS every 9 minutes.
 
-*/9 * * * * dDNS >/dev/null
+*/9 * * * * dydns >/dev/null
