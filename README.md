@@ -43,6 +43,6 @@ You should type the following command to set crontab schedule:
 
 $ crontab -e
 
-The following shows an example in crontab scheduler to run dDNS every 9 minutes.
+The following shows an example in crontab scheduler to run dyDNS every 9 minutes.
 
 */9 * * * * dydns >/dev/null
