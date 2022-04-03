@@ -1,6 +1,9 @@
 # dyDNS
 dyDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
 
+Important information such as username, password and domain name should be encrypted 
+with free dynamic DNS providers.
+
 You need to have an account on freedns.afraid.org and choose dynamic domain names:
 https://freedns.afraid.org/
 
