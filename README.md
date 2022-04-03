@@ -24,7 +24,8 @@ $ cat freedns.info
 USERNAME = "username_freedns.afraid.org"
 PASSWORD = "password_freedns.afraid.org"
 UPDATE_DOMAINS = ["your_domain_name", ] 
-3. Create a plain file of encryption key for openssl.
+3. Create a plain file of encryption/decryption key for openssl.
+key file must contain a string or strings with any characters.
 $ cat key
 your_key 
 4. Change to the key file that only you can read.
