@@ -14,7 +14,7 @@ dyDNS does not need superuser privilege.
 # How to prepare for dyDNS
 To use this PyPI dyDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
-1.You must create .freedns directory.
+1.You must create .freedns directory in your home directory.
 $ cd
 $ mkdir .freedns
 $ cd .freedns
