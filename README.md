@@ -9,6 +9,8 @@ https://freedns.afraid.org/
 
 You can have up to five domain names for free dynamic DNS.
 
+dyDNS does not need superuser privilege.
+
 # How to prepare for dyDNS
 To use this PyPI dyDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
