@@ -14,25 +14,26 @@ dyDNS does not need superuser privilege.
 # How to prepare for dyDNS
 To use this PyPI dyDNS, you need to prepare for .freedns directory and two files: crypted and key.
 <pre>
+The following is the procedure for creating two files, crypted and key, in the .freedns directory:
 1.You must create .freedns directory in your home directory.
 $ cd
 $ mkdir .freedns
 $ cd .freedns
-2.In .freedns directory, you should create a plain authenticiation file: freedns.info.
+2.In .freedns directory, you should create a plain authentication file in plain text: freedns.info.
 freedns.info file has three lines (username, password, dynamic domain name).
 $ cat freedns.info
 USERNAME = "username_freedns.afraid.org"
 PASSWORD = "password_freedns.afraid.org"
 UPDATE_DOMAINS = ["your_domain_name", ] 
-3. Create a plain file of encryption/decryption key for openssl.
+3. Create a plain file of encryption/decryption key for OpenSSL.
 key file must contain a string or strings with any characters.
 $ cat key
 your_key 
-4. Change to the key file that only you can read.
+4. Change to the key file permission that only you can read.
 $ chmod 700 key
-5. Encrypt freedns.info to crypted file
+5. Encrypt freedns.info to crypted file.
 $ openssl enc -e -aes256 -pbkdf2 -in freedns.info -out crypted -k `cat key` 
-6. Delete freedns.info file.
+6. Delete freedns.info file for security.
 $ rm freedns.info
 7. ".freedns" directory has two files: crypted and key
 $ ls
