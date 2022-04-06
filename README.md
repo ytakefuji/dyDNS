@@ -48,9 +48,9 @@ $ dydns
 
 There are two types of messages from freedns.afraid.org:
 
-b'ERROR: Address 202.240.109.21 has not changed.\n'
+b'ERROR: Address xxx.xxx.xxx.xxx has not changed.\n'
 
-b'Updated Address 202.240.109.21 has changed.\n'
+b'Updated Address xxx.xxx.xxx.xxx has changed.\n'
 
 The first line indicates no update while the second line for updated.
 
