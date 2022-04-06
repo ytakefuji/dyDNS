@@ -46,6 +46,14 @@ $ pip install dydns
 # How to run dyDNS
 $ dydns
 
+There are two types of messages from freedns.afraid.org:
+
+b'ERROR: Address 202.240.109.21 has not changed.\n'
+
+b'Updated Address 202.240.109.21 has changed.\n'
+
+The first line indicates no update while the second line for updated.
+
 # crontab
 You should type the following command to set crontab schedule:
 
