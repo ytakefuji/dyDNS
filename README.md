@@ -48,11 +48,10 @@ $ dydns
 
 There are two types of messages from freedns.afraid.org:
 
-b'ERROR: Address xxx.xxx.xxx.xxx has not changed.\n'
+b'No Updated: Address xxx.xxx.xxx.xxx has not changed.\n'
 
 b'Updated Address xxx.xxx.xxx.xxx has changed.\n'
 
-The first line indicates no update while the second line for updated.
 
 # crontab
 You should type the following command to set crontab schedule:
