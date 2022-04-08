@@ -1,4 +1,28 @@
 # dyDNS
+[![Open in Code Ocean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://doi.org/10.24433/CO.2993693.v1)
+
+Open in Code Ocean
+
+https://codeocean.com/capsule/e14c55c9-376c-4ece-8d3b-50c7aebe4c23/tree should be a copy of the published link.
+About
+
+For reproducibility, codeocean is used for generating DOI for publication in refereed journals (IEEE, Elsevier).
+Topics
+Resources
+Readme
+Stars
+0 stars
+Watchers
+1 watching
+Forks
+0 forks
+Releases
+No releases published
+Create a new release
+Packages
+No packages published
+Publis
+
 dyDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
 
 Important information such as username, password and domain name should be encrypted 
