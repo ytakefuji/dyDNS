@@ -3,21 +3,6 @@
 
 
 For software reproducibility validation, codeocean is used for generating DOI for publication in refereed journals (IEEE, Elsevier).
-Topics
-Resources
-Readme
-Stars
-0 stars
-Watchers
-1 watching
-Forks
-0 forks
-Releases
-No releases published
-Create a new release
-Packages
-No packages published
-Publis
 
 dyDNS is a PyPI package for periodically activating dynamicDNS in freedns.afraid.org.
 
